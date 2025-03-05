@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+    body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    }
+    button{
+        height: 50px;
+        width: 50px;
+        border-radius: 50px;
+
+    }
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body>
+    
+<div class="main">
+    <div class="l1">
+       <button onclick="con('1')">1</button>
+       <button onclick="con('2')">2</button>
+       <button onclick="con('3')">3</button>
+       <button onclick="con('+')">+</button>
+    </div>
+
+    <div class="l2">
+        <button onclick="con('4')">4</button>
+        <button onclick="con('5')">5</button>
+        <button onclick="con('6')">6</button>
+        <button onclick="con('-')">-</button>
+     </div>
+
+
+     <div class="l3">
+        <button onclick="con('7')">7</button>
+        <button onclick="con('8')">8</button>
+        <button onclick="con('9')">9</button>
+        <button onclick="con('/')">/</button>
+     </div>
+
+
+     <div class="l4">
+        <button onclick="con('*')">X</button>
+        <button onclick="con('0')">0</button>
+        <button onclick="con('.')">.</button>
+        <button onclick="output()">=</button>
+     </div>
+
+
+</div>
+
+
+<script src="calculator.js"></script>
+
+
+
+</body>
+</html>

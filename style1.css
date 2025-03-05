@@ -1,0 +1,94 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+}
+
+/* Container for the entire forecast */
+.forecast-container {
+    width: 90%;
+    max-width: 1200px;
+}
+
+/* Row styling (each row will contain 5 days) */
+.forecast-row {
+    display: flex;
+    justify-content:c;
+    margin-bottom: 20px;
+}
+
+/* Each day's forecast styling */
+.forecast-day {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Circular weather icon styling */
+.weather-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+/* Weather icon color classes */
+.sunny {
+    background-color: #ffcc00; /* Yellow for sunny */
+}
+
+.cloudy {
+    background-color: #cccccc; /* Light Gray for cloudy */
+}
+
+.rainy {
+    background-color: #0077b6; /* Blue for rainy */
+}
+
+.snowy {
+    background-color: #00bfff; /* Light Blue for snowy */
+}
+
+/* Text styling for date, temperature, and description */
+.date, .temp, .description {
+    display: block;
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+/* Styling for the top row (rounded corners) */
+.top-row {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+/* Styling for the bottom row (rounded corners) */
+.bottom-row {
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+/* Remove left margin from the first forecast item */
+.forecast-row .forecast-day:first-child {
+    margin-left: 0;
+}
+
+/* Remove right margin from the last forecast item */
+.forecast-row .forecast-day:last-child {
+    margin-right: 0;
+}

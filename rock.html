@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock. Paper. sissors </title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        button{
+            margin: 10px;
+            width: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Let's Play <span id="rps">ROCK. PAPER. SISSORS.</span></h1>
+    <div class="ful">
+        <div class="but">
+            <button id="btn1" onclick="game('Rock')">
+                <div class="dif">
+                    <h1>🪨</h1>
+                    <h6>Rock</h6>
+                </div>
+            </button>
+            <button id="btn2" onclick="game('Paper')">
+                <div class="dif">
+                    <h1>⬜</h1>
+                    <h6>Paper</h6>
+                </div>
+            </button>
+            <button id="btn3" onclick="game('Sissors')">
+                <div class="dif">
+                    <h1>✂️</h1>
+                    <h6>Sissors</h6>
+                </div>
+            </button>
+            <button id="btn4">
+                <div class="dif">
+                    <h1> ↻</h1>
+                    <h6>reset</h6>
+                </div>
+            </button>
+        </div>
+        <div class="comout" id="div">
+
+        </div>
+    </div>
+    <h1 id="">
+        <h1 id="score1">WINS: 0</h1>
+        <h1 id="score2">LOOSE: 0</h1>
+        <h1 id="score3">DRAWS: 0</h1>
+    </h1>
+    <script src="script.js"></script>
+</body>
+
+</html>
